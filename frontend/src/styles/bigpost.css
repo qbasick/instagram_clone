@@ -1,0 +1,189 @@
+.big-post-container {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 600px;
+    max-width: 1024px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid gray 1px;
+}
+
+.big-post-image-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.big-post-image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.big-post-image-container video {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.big-post-text-container {
+    background-color: lightgoldenrodyellow;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-flow: column;
+    height: inherit;
+}
+
+.big-post-text-container img {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.like-svg {
+    width: 2rem;
+    margin-right: 2rem;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+.like-svg:focus {
+    outline: none;
+}
+
+.filled-like {
+    fill: palevioletred;
+    color: palevioletred;
+}
+.unfilled-like {
+    color: black;
+    fill: transparent;
+}
+.comments-svg {
+    width: 2rem;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
+.post-page-header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: gray solid 1px;
+}
+
+.post-page-header-container button{
+    margin-left: 1.5rem;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.post-page-header-links {
+    display: flex;
+    align-items: center;
+}
+
+.post-page-actions-container {
+    display: flex;
+    align-items: center;
+    border-top: gray solid 1px;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.post-page-main-body-container {
+    display: flex;
+    flex-flow: column;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.post-page-main-body-container::-webkit-scrollbar {
+    display: none;
+}
+
+.post-page-comment-container {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1.5rem;
+}
+
+.post-page-comment-body {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.post-page-comment-body div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.post-page-comment-body div:nth-child(2) {
+    margin-left: 0.5rem;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.post-page-comment-footer {
+    margin-top: 0.5rem;
+    display: flex;
+    margin-left: 4.5rem;
+    color:gray;
+    font-size: small;
+}
+
+
+
+
+.load-page-comments-button {
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.post-page-comment-section {
+}
+
+
+.post-page-footer-container {}
+
+
+.post-page-comment-form-container {
+    border-top: gray solid 1px;
+    margin-top: 0.5rem;
+}
+.post-page-comment-form-container form {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.25rem;
+    padding-left: 0;
+
+}
+.post-page-comment-input {
+    color: gray;
+    width: 100%;
+    margin-right: 1rem;
+    padding: 1.25rem 1rem;
+    font-size: small;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.post-page-comment-button {
+    color: deepskyblue;
+    font-size: medium;
+    font-weight: bold;
+    width: 25%;
+}

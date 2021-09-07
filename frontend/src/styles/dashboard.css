@@ -1,0 +1,9 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+}

@@ -1,0 +1,92 @@
+header {
+    height: 4rem;
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-color: silver;
+    margin-bottom: 2rem;
+}
+header button:focus {
+    outline: none;
+}
+.header-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo-container h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo-container img {
+    margin-top: 0.5rem;
+    width: 50%;
+}
+
+.auth-container {
+    color: gray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.auth-container svg {
+    width: 2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+}
+
+.auth-container svg.active {
+    transform: rotate(45deg);
+}
+
+.avatar {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.avatar-image {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 9999px;
+}
+
+.login-button {
+    background-color: deepskyblue;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    color: lightgoldenrodyellow;
+    width: 5rem;
+    height: 2rem;
+}
+
+.signup-button {
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    color: deepskyblue;
+    width: 5rem;
+    height: 2rem;
+}
