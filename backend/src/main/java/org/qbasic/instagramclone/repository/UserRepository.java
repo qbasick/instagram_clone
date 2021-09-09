@@ -1,10 +1,13 @@
 package org.qbasic.instagramclone.repository;
 
 import org.qbasic.instagramclone.model.UserAccount;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -25,4 +28,6 @@ public interface UserRepository extends JpaRepository<UserAccount, Long> {
                 "limit 15;"
     )
     Set<UserAccount> recommendUsers(Long id);
+
+    List<UserAccount> getUserAccountByUsernameContainingIgnoreCase(String s, Pageable pageable);
 }

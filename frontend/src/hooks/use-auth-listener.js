@@ -2,13 +2,11 @@ import {useState, useEffect, useContext} from 'react';
 import DatabaseContext from "../context/database";
 
 export default function useAuthListener() {
-    const [user, setUser] = useState(localStorage.getItem('user'));
+    const [user, setUser] = useState(/*localStorage.getItem('user')*/null);
     const {counter} = useContext(DatabaseContext);
+
     useEffect(() => {
-        const listener = () => {
-            setUser(localStorage.getItem('user'));
-        };
-        return () => listener();
+        setUser(localStorage.getItem('user'));
     }, [counter]);
 
     return {user};

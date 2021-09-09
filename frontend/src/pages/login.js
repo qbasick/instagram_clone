@@ -17,7 +17,7 @@ export default function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         signIn(login, password);
-        setTimeout(() => history.push(ROUTES.DASHBOARD), 2000);
+        history.push(ROUTES.DASHBOARD);
     };
 
     const redirectToRegister = () => {

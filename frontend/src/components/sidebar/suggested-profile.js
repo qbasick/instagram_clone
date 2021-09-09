@@ -26,7 +26,9 @@ export default function SuggestedProfile({username, photo, description}) {
                 </Link>
                 <Link to={`/u/${username}`}>
                     <p><b>{username}</b></p>
-                    <p>{description}</p>
+                    <p>{description.length > 24
+                        ? description.substring(0, 24) + "..."
+                        : description}</p>
                 </Link>
             </div>
             <button

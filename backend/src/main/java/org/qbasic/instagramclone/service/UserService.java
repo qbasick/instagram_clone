@@ -8,6 +8,7 @@ import org.qbasic.instagramclone.mapper.UserConverter;
 import org.qbasic.instagramclone.model.UserAccount;
 import org.qbasic.instagramclone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
@@ -40,6 +41,14 @@ public class UserService {
     public UserDto getUser(String name) {
         UserAccount userAccount = userRepository.findUserAccountByUsername(name).orElseThrow(() -> new UsernameNotFoundException(name + " not found"));
         return userConverter.convertToDto(userAccount);
+    }
+
+    public List<UserDto> getUserWithUsernameContaining(String s) {
+        List<UserAccount> userAccounts = userRepository.getUserAccountByUsernameContainingIgnoreCase(s, PageRequest.of(0, 10));
+        return userAccounts
+                .stream()
+                .map(userConverter::convertToDto)
+                .collect(Collectors.toList());
     }
 
     public void updateUser(UserDto userDto) {

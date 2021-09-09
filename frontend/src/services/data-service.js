@@ -1,6 +1,6 @@
 import authHeader from "./auth-header";
 
-const USER_API = "http://localhost:8080/api/users/follow";
+const USER_API = "http://localhost:8080/api/users";
 const POST_API = "http://localhost:8080/api/posts";
 const COMMENT_API = "http://localhost:8080/api/comments";
 const FILE_API = "http://localhost:8080/api/files";
@@ -46,25 +46,29 @@ const updateProfile = async (file, description) => {
         });
         photo = uploadResponse.ok && await uploadResponse.text();
     }
-    let updateProfileResponse = await enhancedFetch("http://localhost:8080/api/users/update", "patch", {
+    let updateProfileResponse = await enhancedFetch(USER_API + "/update", "patch", {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({photo, description})});
     return updateProfileResponse.ok;
 }
 
+const searchByFragment = async (fragment) => {
+    let response = await enhancedFetch(USER_API + `/find?fragment=${fragment}`, "get");
+    return response.ok && await response.json();
+}
 
 const toggleFollow = async (username) => {
-    let response = await enhancedFetch(USER_API + "/" + username, "post");
+    let response = await enhancedFetch(USER_API + "/follow" + username, "post");
     return !!response.status;
 }
 
 const getFollowers = async (username) => {
-    let response = await enhancedFetch(USER_API + "/followers/" + username, "get");
+    let response = await enhancedFetch(USER_API + "/follow/followers/" + username, "get");
     return response.ok && await response.json();
 }
 
 const getFollowing = async (username) => {
-    let response = await enhancedFetch(USER_API + "/following/" + username, "get");
+    let response = await enhancedFetch(USER_API + "/follow/following/" + username, "get");
     return response.ok && await response.json();
 }
 // Placeholder. Should be implemented as backend function
@@ -118,12 +122,12 @@ const loadCommentsToPost = async (postId, page) => {
 }
 
 const getUser = async (username) => {
-    let response = await enhancedFetch("http://localhost:8080/api/users/" + username, "get");
+    let response = await enhancedFetch(USER_API + "/" + username, "get");
     return response.ok && await response.json();
 }
 
 const getSuggestions = async () => {
-    let response = await enhancedFetch("http://localhost:8080/api/users/recommend", "get");
+    let response = await enhancedFetch(USER_API + "/recommend", "get");
     return response.ok && await response.json();
 }
 
@@ -154,6 +158,7 @@ export default {
     getUser,
     getPostCount,
     isUserFollowedByMe,
-    updateProfile
+    updateProfile,
+    searchByFragment
 };
 

@@ -101,7 +101,12 @@
 .post-comment-body {
     height: auto;
     min-height: 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 0.4fr) repeat(3, minmax(0, 1fr));
+}
+.post-comment-body div:last-child {
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 .post-comment-body img {

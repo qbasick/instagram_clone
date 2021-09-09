@@ -1,0 +1,86 @@
+.searchbar-container {
+    margin-top: 1.5rem;
+    width: 40%;
+    position: relative;
+}
+.searchbar-input {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar-input input {
+   width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 5px gray;
+    text-indent: 4%;
+    caret-color: gray;
+}
+.searchbar-input input:focus {
+    outline: none;
+}
+
+.absolute-searchbar-profiles {
+    width: 100%;
+    margin-top: 1rem;
+    position: absolute;
+    z-index: 99;
+}
+
+.searchbar-profile-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.searchbar-profile-container:hover {
+    background-color: burlywood;
+}
+
+.searchbar-profile-container img {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    margin-right: 1rem;
+}
+
+.stacking-context-for-searchbar {
+    position: relative;
+    z-index: 2;
+}
+
+.searchbar-profiles {
+    padding-bottom: 2rem;
+    width: 100%;
+    max-height: 40vh;
+    border-radius: 0.25rem;
+    overflow-y: auto;
+    box-shadow: 0 0 5px gray;
+    background-color: lightgoldenrodyellow;
+}
+
+.searchbar-profiles::before {
+    z-index: -1;
+    content: "";
+    box-shadow: 0 0 5px gray;
+    position: absolute;
+    left: 49%;
+    top: 0;
+    width: 20px;
+    background-color: lightgoldenrodyellow;
+    transform:translateY(-50%) rotate(45deg);
+    height: 20px;
+}
+.stacking-context-for-searchbar::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    top: 0;
+    width: 20px;
+    background-color: lightgoldenrodyellow;
+    transform:translateY(-50%) rotate(45deg);
+    height: 20px;
+}

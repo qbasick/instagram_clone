@@ -31,6 +31,11 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
+    @GetMapping("/find")
+    public List<UserDto> searchByUsername(@RequestParam String fragment) {
+        return userService.getUserWithUsernameContaining(fragment);
+    }
+
     @GetMapping("/{username}")
     public UserDto getUser(@PathVariable String username) {
         return userService.getUser(username);

@@ -6,6 +6,7 @@ import UserContext from "../../context/user";
 import FollowProfile from "./follow-profile";
 
 
+
 export default function Header({user, followers, followings}) {
 
     const [displayFollowers, setDisplayFollowers] = useState(false);

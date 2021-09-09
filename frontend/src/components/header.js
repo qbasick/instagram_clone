@@ -7,6 +7,7 @@ import * as ROUTES from "../constants/routes";
 import Modal from "./modal/modal";
 import FileUpload from "./file-upload";
 import ProfileUpdate from "./profile-update";
+import SearchBar from "./searchbar/searchbar";
 
 
 export default function Header() {
@@ -38,6 +39,7 @@ export default function Header() {
                             </Link>
                         </h1>
                     </div>
+                    <SearchBar/>
                     <div className="auth-container">
                         {userDetails ? (<>
                                 <button
