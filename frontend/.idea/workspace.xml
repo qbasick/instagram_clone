@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9e21f8c0-adcb-4e24-8259-8e8a26ff4843" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile-page/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-page/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/suggested-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/suggested-profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/data-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/searchbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/searchbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +99,7 @@
       <workItem from="1627235164393" duration="69975000" />
       <workItem from="1628446174833" duration="119896000" />
       <workItem from="1629973057208" duration="168177000" />
-      <workItem from="1630852847331" duration="65701000" />
+      <workItem from="1630852847331" duration="69487000" />
     </task>
     <servers />
   </component>

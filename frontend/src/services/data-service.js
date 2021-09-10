@@ -58,7 +58,7 @@ const searchByFragment = async (fragment) => {
 }
 
 const toggleFollow = async (username) => {
-    let response = await enhancedFetch(USER_API + "/follow" + username, "post");
+    let response = await enhancedFetch(USER_API + "/follow/" + username, "post");
     return !!response.status;
 }
 

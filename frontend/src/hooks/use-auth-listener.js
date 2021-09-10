@@ -7,7 +7,7 @@ export default function useAuthListener() {
 
     useEffect(() => {
         setUser(localStorage.getItem('user'));
-    }, [counter]);
+    }, [counter, user]);
 
     return {user};
 }

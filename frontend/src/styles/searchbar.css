@@ -19,6 +19,7 @@
 }
 .searchbar-input input:focus {
     outline: none;
+    box-shadow: 0 0 3px blue;
 }
 
 .absolute-searchbar-profiles {
