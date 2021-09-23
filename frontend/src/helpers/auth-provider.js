@@ -6,13 +6,19 @@ export function AuthProvider({children}) {
 
     const [counter, setCounter] = useState(0);
 
-    const signIn = (username, password) => {
-        login(username, password).then(() => setCounter((counter + 1) % 10));
+    const signIn = async (username, password) => {
+        const res = await login(username, password);
+        if (res) {
+            setCounter(counter => (counter + 1) % 10);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     const signOut = () => {
         logout();
-        setCounter((counter + 1) % 10);
+        setCounter(counter => (counter + 1) % 10);
     }
 
     return (

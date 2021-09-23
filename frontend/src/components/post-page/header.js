@@ -11,7 +11,9 @@ export default function Header({username, avatar}) {
     const {userDetails} = useContext(UserContext);
 
     useEffect(() => {
-        setFollow(userDetails && data.isUserFollowedByMe(username, userDetails.username));
+         if (userDetails) {
+             data.isUserFollowedByMe(username, userDetails).then(res => setFollow(res));
+         }
     },  [username]);
 
     const handleToggle = () => {

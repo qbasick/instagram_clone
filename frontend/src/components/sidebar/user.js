@@ -14,7 +14,9 @@ export default function User() {
                 <Link to={`/u/${userDetails.username}`}>
                     <div className="sidebar-userdetails-container">
                     <div className="sidebar-picture-container">
-                        <img src={"http://localhost:8080/api/files/" + userDetails.photo} alt="user avatar"/>
+                        <img src={"http://localhost:8080/api/files/" + userDetails.photo}
+                             alt="user avatar"
+                             onError={(event) => event.target.src = "/images/profilepic.jpg"}/>
                     </div>
                     <div className="sidebar-userinfo-container">
                         <h1>{userDetails.username}</h1>

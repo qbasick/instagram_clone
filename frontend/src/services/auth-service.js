@@ -23,6 +23,7 @@ export const login = async (username, password) => {
         localStorage.setItem('user', username);
         localStorage.setItem('token', text);
     }
+    return response.ok;
     //console.log( JSON.parse(atob(text.split('.')[1])));
 }
 

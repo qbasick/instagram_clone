@@ -16,11 +16,7 @@ export default function Header() {
     const history = useHistory();
     const [uploadModalActive, setUploadModalActive] = useState(false);
     const [updateModalActive, setUpdateModalActive] = useState(false);
-    /*const [avatar, setAvatar] = useState("/images/profilepic.jpg");
 
-    useEffect(() => {
-        data.getUser(user).then((res) => {if (res.photo) {setAvatar("http://localhost:8080/api/files/" + res.photo)}});
-    },[userDetails]);*/
     return (
         <>
             <Modal active={uploadModalActive} setActive={setUploadModalActive} classStyle="upload-modal-content">

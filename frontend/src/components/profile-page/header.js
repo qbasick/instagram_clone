@@ -60,7 +60,10 @@ export default function Header({user, followers, followings}) {
         <div className="profile-header-container">
             <div className="profile-header-picture">
                 <div className="image-border">
-                    <img src={IMAGE_SRC + user.photo} alt="User photo"/>
+                    <img src={IMAGE_SRC + user.photo}
+                         alt="User photo"
+                         onError={(event) => event.target.src = "/images/profilepic.jpg"}
+                    />
                 </div>
             </div>
             <div className="profile-header-text">

@@ -16,8 +16,11 @@ export default function Login() {
     //Implement after backend is done
     const handleLogin = (e) => {
         e.preventDefault();
-        signIn(login, password);
-        history.push(ROUTES.DASHBOARD);
+        signIn(login, password).then(res => {
+            if (res) {
+                history.push(ROUTES.DASHBOARD);
+            }
+        });
     };
 
     const redirectToRegister = () => {

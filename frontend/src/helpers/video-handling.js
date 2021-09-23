@@ -1,10 +1,8 @@
 import {IMAGE_SRC} from "../constants/endpoints";
 
 export function isVideoRef(ref) {
-    console.log(ref);
     const pos = ref.lastIndexOf(".");
     const extension = ref.substring(pos + 1);
-    console.log(extension);
     return ["mp4", "webm", "ogg"].some((w) => w === extension);
 }
 

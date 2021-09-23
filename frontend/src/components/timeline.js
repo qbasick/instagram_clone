@@ -8,7 +8,6 @@ import ReactLoader from "./loader";
 
 export default function Timeline() {
     const {userDetails} = useContext(UserContext);
-    console.log(userDetails);
     const {photos} = usePhotos(userDetails?.username);
 
 

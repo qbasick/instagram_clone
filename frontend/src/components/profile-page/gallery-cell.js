@@ -9,7 +9,6 @@ export default function GalleryCell(props) {
 
     useEffect(() => {
         if (isVideoRef(props.photo.photo)) {
-            console.log("yes");
             createSnapshotFromVideo(setSrc, props.photo.photo);
         }
     }, []);

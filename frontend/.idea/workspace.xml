@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e21f8c0-adcb-4e24-8259-8e8a26ff4843" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/profilepic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/profilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post-page/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-page/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile-page/gallery-cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-page/gallery-cell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile-page/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-page/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/auth-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/auth-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/video-handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/video-handling.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/data-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/searchbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/searchbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Documents and Settings\anton\Documents\java_projects\instagram-clone\frontend\public\images" />
       <recent name="C:\Documents and Settings\anton\Documents\java_projects\instagram-clone\frontend\src\components\sidebar" />
     </key>
   </component>
@@ -99,7 +109,7 @@
       <workItem from="1627235164393" duration="69975000" />
       <workItem from="1628446174833" duration="119896000" />
       <workItem from="1629973057208" duration="168177000" />
-      <workItem from="1630852847331" duration="69487000" />
+      <workItem from="1630852847331" duration="81518000" />
     </task>
     <servers />
   </component>

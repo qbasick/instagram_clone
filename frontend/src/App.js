@@ -15,10 +15,11 @@ const Profile = lazy(() => import("./pages/profile"));
 const Post = lazy(() => import("./pages/post"));
 
 function App() {
-    const {user} = useAuthListener();
+    const {user, counter} = useAuthListener();
     const [userDetails, setUserDetails] = useState(null);
 
     useEffect(() => {
+
         if (user) {
             data.getUser(user)
                 .then((res) => {if (res) {
@@ -26,7 +27,7 @@ function App() {
                 }
             });
         }
-    }, [user]);
+    }, [user, counter]);
 
     return (
         <UserContext.Provider value={{userDetails}}>
