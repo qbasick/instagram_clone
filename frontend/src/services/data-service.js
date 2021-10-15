@@ -4,6 +4,7 @@ const USER_API = "http://localhost:8080/api/users";
 const POST_API = "http://localhost:8080/api/posts";
 const COMMENT_API = "http://localhost:8080/api/comments";
 const FILE_API = "http://localhost:8080/api/files";
+const CHAT_API = "http://localhost:8080/chat";
 
 const enhancedFetch = (url, method, args) => {
     if (!args) {
@@ -141,6 +142,16 @@ const isPostLikedByUser = async (postId) => {
     return response.ok;
 }
 
+const loadChatRooms = async () => {
+    let response = await enhancedFetch(CHAT_API + "/chatrooms", "get");
+    return response.ok && await response.json();
+}
+
+const loadChatMessages = async (chatId) => {
+    let response = await enhancedFetch(CHAT_API + "/messages/" + chatId, "get");
+    return response.ok && await response.json();
+}
+
 export default {
     isPostLikedByUser,
     loadUserTimeline,
@@ -159,6 +170,8 @@ export default {
     getPostCount,
     isUserFollowedByMe,
     updateProfile,
-    searchByFragment
+    searchByFragment,
+    loadChatMessages,
+    loadChatRooms
 };
 

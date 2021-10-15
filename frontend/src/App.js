@@ -13,6 +13,7 @@ const NotFound = lazy(() => import('./pages/not-found'));
 const Dashboard = lazy(() => import('./pages/dashboard'));
 const Profile = lazy(() => import("./pages/profile"));
 const Post = lazy(() => import("./pages/post"));
+const Chat = lazy(() => import("./pages/chat"));
 
 function App() {
     const {user, counter} = useAuthListener();
@@ -39,6 +40,7 @@ function App() {
                             <Route path={ROUTES.DASHBOARD} component={Dashboard} exact/>
                             <Route path={ROUTES.LOGIN} component={Login}/>
                             <Route path={ROUTES.SIGN_UP} component={Signup}/>
+                            <Route path={ROUTES.CHAT} component={Chat}/>
                             <Route component={NotFound}/>
                         </Switch>
                     </Suspense>

@@ -4,6 +4,7 @@ import data from "../../services/data-service";
 import Modal from "../modal/modal";
 import UserContext from "../../context/user";
 import FollowProfile from "./follow-profile";
+import {useHistory} from "react-router-dom";
 
 
 
@@ -14,6 +15,7 @@ export default function Header({user, followers, followings}) {
     const [postCount, setPostCount] = useState(0);
     const [follow, setFollow] = useState(false);
     const {userDetails} = useContext(UserContext);
+    const history = useHistory();
 
 
     useEffect(() => {
@@ -83,6 +85,11 @@ export default function Header({user, followers, followings}) {
                             {!follow ? "Follow" : "Unfollow"}
                         </button>
                      : null}
+                     <button type="button"
+                             style={{marginLeft: "1em"}}
+                        onClick={() => history.push("/chat?id=" + user.username)}>
+                        Direct
+                     </button>
                 </div>
                 <div>
                     <p><b>{postCount}</b> publications</p>

@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e21f8c0-adcb-4e24-8259-8e8a26ff4843" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/config/SocketSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/config/SocketSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/dto/ChatMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/dto/ChatMessageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/model/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/model/ChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/model/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/model/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/ChatMessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/ChatMessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/ChatRoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/repository/ChatRoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/service/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/org/qbasic/instagramclone/service/ChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/profilepic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/profilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-page/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-page/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile-page/gallery-cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-page/gallery-cell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chat/chat-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chat/chat-dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chat/chatroom-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chat/chatroom-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chat/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chat/room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/profile-page/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-page/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/auth-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/auth-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/video-handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/video-handling.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-auth-listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/data-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/chat.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,15 +84,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.user.js">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,8 +119,21 @@
       <workItem from="1627235164393" duration="69975000" />
       <workItem from="1628446174833" duration="119896000" />
       <workItem from="1629973057208" duration="168177000" />
-      <workItem from="1630852847331" duration="81518000" />
+      <workItem from="1630852847331" duration="85415000" />
+      <workItem from="1633806281244" duration="453000" />
+      <workItem from="1633806772989" duration="22516000" />
+      <workItem from="1634038302526" duration="237000" />
+      <workItem from="1634038586349" duration="7951000" />
+      <workItem from="1634065046166" duration="43888000" />
     </task>
+    <task id="LOCAL-00001" summary="bugfixes">
+      <created>1632417429878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632417429878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +150,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfixes" />
   </component>
 </project>

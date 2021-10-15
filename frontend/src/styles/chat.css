@@ -8,6 +8,123 @@
     border: solid gray 1px;
     max-width: 1024px;
     border-radius: 0.25em;
+    height: auto;
+    background-color: lightgoldenrodyellow;
+}
+.chatrooms-module {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100vh;
+    border-right: black 1px solid;
+}
+.chat-dialog-container {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    height: 100vh;
+}
+.chatrooms-header {
+    border-bottom: black 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+.chatroom {
+    cursor: pointer;
+    margin-top: 0.5em;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.chatroom.active {
+    border: darkred 1px solid;
+    border-radius: 0.5em;
+    background-color: salmon;
 }
 
 
+.chatroom-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+.chatroom-image-container img {
+    border-radius: 9999px;
+    width: 3em;
+    height: 3em;
+}
+
+.chat-dialog-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    border-bottom: 1px black solid;
+}
+.chat-dialog-image-container img {
+    border-radius: 9999px;
+    width: 3em;
+    height: 3em;
+}
+
+.chat-dialog-message-position {
+    display: flex;
+}
+
+.chat-dialog-message-position.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-dialog-message-position.right .chat-dialog-message {
+    background-color: blue;
+    color: white;
+}
+.chat-dialog-message {
+    background-color: gainsboro;
+    display: flex;
+    flex-flow: column;
+    max-width: 25%;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    margin-top: 1em;
+}
+.chat-dialog-input {
+    height: 2em;
+}
+.chat-dialog-footer {
+    margin-top: 1em;
+}
+.chat-dialog-input {
+    width: 80%;
+    height: 2em;
+    border-radius: 0.5em;
+    background-color: gainsboro;
+    margin-left: 0.5em;
+}
+.chat-dialog-button {
+    width: 15%;
+    height: 2em;
+    border-radius: 0.5em;
+    background-color: blue;
+    color: white;
+    margin-left: 1em;
+}
+
+.chat-dialog-text-area {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    overflow-y: auto;
+    height: 75%;
+}

@@ -1,9 +1,11 @@
 import data from "../../services/data-service";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
+import {IMAGE_SRC} from "../../constants/endpoints";
 
-export default function Room(username) {
+export default function Room({setChat, setConversation, username, room, active, setActive}) {
 
-    const [picture, setPicture] = useState("/images/profilepic.jpg");
+    const [picture, setPicture] = useState("");
+    const elem = useRef(null);
 
     useEffect(() => {
         data.getUser(username).then(res => {
@@ -13,11 +15,19 @@ export default function Room(username) {
         })
     }, [username])
 
+    function handleClick() {
+        setChat(room);
+        setConversation(username);
+        setActive(room);
+    }
+
 
     return (
-        <div className="chatroom">
+        <div onClick={handleClick} className={active ? "chatroom active" : "chatroom"}>
             <div className="chatroom-image-container">
-                <img src={picture} alt="avatar"/>
+                <img src={IMAGE_SRC + picture}
+                     alt="avatar"
+                     onError={(event) => event.target.src = "/images/profilepic.jpg"}/>
             </div>
             <div className="chatroom-text-container">
                 <b>{username}</b>
